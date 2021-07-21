@@ -92,18 +92,18 @@ const Login = () => {
           value={emailState.value}
           onChange={emailChangeHandler}
           onBlur={validateEmailHandler}
-        >
-          E-Mail
-        </Input>
+          label="E-Mail"
+          id="email"
+        />
         <Input
           isValid={passwordState.isValid}
           type="password"
           value={passwordState.value}
           onChange={passwordChangeHandler}
           onBlur={validatePasswordHandler}
-        >
-          Password
-        </Input>
+          label="Password"
+          id="password"
+        />
         <div className={classes.actions}>
           <Button type="submit" className={classes.btn} disabled={!formIsValid}>
             Login
